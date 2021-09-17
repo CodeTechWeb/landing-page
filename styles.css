@@ -671,8 +671,7 @@ footer{
 
 }
 
-@media (max-width: 900px) and (min-width: 300px)
-{
+@media (max-width: 900px) and (min-width: 300px) {
     .logoPsychoHelp{
         width: 20%;
     }
@@ -682,8 +681,14 @@ footer{
 
 }
 
-@media (max-width: 300px)
-{
+@media (max-width: 361px){
+    .sub-headline {
+        font-size: 6rem;
+    }
+
+}
+
+@media (max-width: 300px) {
     .logoPsychoHelp{
         width: 40%;
     }
