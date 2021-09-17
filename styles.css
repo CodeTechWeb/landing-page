@@ -36,8 +36,8 @@ section{
 }
 
 img{
-    width:100%;
-    max-width:100%;
+    width: 100%;
+    max-width: 100%;
 }
 
 a{
@@ -67,6 +67,18 @@ header{
     left:0;
     z-index:1;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, .5), transparent);
+}
+
+.sub-headline-bienvenido{
+    font-size: 10vw;
+    font-family: var(--secondary-font);
+    color:var(--secondary-font-color);
+    font-weight:100;
+    line-height:0.9;
+    letter-spacing: 2px;
+    opacity:0;
+    animation:fadeUp .5s forwards;
+    animation-delay: .5s;
 }
 
 .nav{
@@ -203,12 +215,12 @@ header{
 
 .first-letter{
     text-transform: uppercase;
-    font-size:10.3rem;
+
 }
 
 .headline{
     color:black;
-    font-size:3.7rem;
+    font-size:3.7vw;
     font-family:var(--main-font);
     text-transform: uppercase;
     letter-spacing: .9rem;
@@ -600,6 +612,19 @@ footer{
         font-size:4.7rem;
         letter-spacing:.8rem;
     }
+
+    .sub-headline-bienvenido{
+        font-size:7.5rem;
+        font-family: var(--secondary-font);
+        color:var(--secondary-font-color);
+        font-weight:100;
+        line-height:.9;
+        letter-spacing: 2px;
+        opacity:0;
+        animation:fadeUp .5s forwards;
+        animation-delay: .5s;
+    }
+
     .line{
         max-width:11.4rem;
     }
@@ -642,7 +667,28 @@ footer{
     .newsletter-btn{
         margin-left:7.5rem;
     }
+
+
 }
+
+@media (max-width: 900px) and (min-width: 300px)
+{
+    .logoPsychoHelp{
+        width: 20%;
+    }
+    img{
+        max-width:50%;
+    }
+
+}
+
+@media (max-width: 300px)
+{
+    .logoPsychoHelp{
+        width: 40%;
+    }
+}
+
 @keyframes fadeUp {
     0%{
         transform: translateY(4rem);
